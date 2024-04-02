@@ -6,7 +6,7 @@
 - HTML
 - CSS
 
-
-### 🚀 [Link projeto publicado](https://alura-midi-desenvolve.vercel.app/)
+<!-- 
+### 🚀 [Link projeto publicado](https://alura-midi-desenvolve.vercel.app/) -->
 
 ### <img src="./images/alura-midi.png">
