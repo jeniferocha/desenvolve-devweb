@@ -1,14 +1,7 @@
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 
-// async function conectaNaDatabase() {
-//   mongoose.connect(process.env.DB_CONNECTION_STRING);
-//   return mongoose.connection;
-// };
+mongoose.connect(process.env.STRING_CONEXAO_BD);
 
-async function conectaNaDatabase() {
-  mongoose.connect(
-    "mongodb+srv://admin:admin123@cluster0.9vvyzry.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-  );
-  return mongoose.connection;
-}
-export default conectaNaDatabase;
+let db = mongoose.connection;
+
+export default db;
