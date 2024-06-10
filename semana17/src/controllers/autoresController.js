@@ -17,9 +17,13 @@ class AutorController {
 
       const autorResultado = await autores.findById(id);
 
-      res.status(200).send(autorResultado);
+      if (autorResultado !== null) {
+        res.status(200).send(autorResultado);
+      } else {
+        res.status(400).send({ message: "Id do Autor não localizado. " });
+      }
     } catch (erro) {
-      res.status(400).send({ message: `${erro.message} - Id do Autor não localizado.` });
+      res.status(500).send({ message: "Erro interno de servidor" });
     }
   };
 
